@@ -133,7 +133,7 @@
         <tbody>
             <tr>
                 <td scope="row">1</td>
-                <td><?php echo $_POST["nama"]; ?></td>
+                <td><?php echo $_POST["name"]; ?></td>
                 <td><?php echo $date_input; ?> </td>
                 <td><?php echo $check; ?></td>
                 <td><?= $_POST['pilihan']; ?></td>
