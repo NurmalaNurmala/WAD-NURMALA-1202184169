@@ -2,7 +2,7 @@
 	$host = "localhost";
 	$user = "root";
 	$pass = "";
-	$db = "wad_modul3_mala";
+	$db = "wad_modul2_mala";
 
 	$koneksi = mysqli_connect($host, $user, $pass, $db);
 

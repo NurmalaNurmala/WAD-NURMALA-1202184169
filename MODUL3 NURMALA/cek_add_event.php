@@ -1,5 +1,5 @@
 <?php 
-include 'koneksi.php';
+include 'conn.php';
 
 $nama = $_POST['name'];
 $deskripsi = $_POST['deskripsi'];
@@ -32,7 +32,7 @@ if($cek > 0) { //berarti ada di database
 } else {
 	$gambar = $rand.'_'.$filename;
 	move_uploaded_file($_FILES['gambar']['tmp_name'], 'gambar/'.$rand.'_'.$filename);
-	mysqli_query($koneksi, "INSERT INTO event_table (`name`, `deskripsi`, `gambar`, `kategori`, `tanggal`, `mulai`, `berakhir`, `tempat`, `harga`, `benefit`) VALUES('$nama','$deskripsi','$gambar','$kategori','$date','$mulai','$berakhir','$tempat','$harga','$benefit')");
+	mysqli_query($koneksi, "INSERT INTO event_tabel (`name`, `deskripsi`, `gambar`, `kategori`, `tanggal`, `mulai`, `berakhir`, `tempat`, `harga`, `benefit`) VALUES('$nama','$deskripsi','$gambar','$kategori','$date','$mulai','$berakhir','$tempat','$harga','$benefit')");
 	header("location:index.php?pesan=berhasiltambah");
 }
 ?>
