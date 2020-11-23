@@ -1,5 +1,5 @@
 <?php 
-session_start();
+session_destroy();
 //cek cookie, kalau ada langsung login
 if(isset($_COOKIE['login'])) {
 	if($_COOKIE['login'] == 'true'){
@@ -9,7 +9,7 @@ if(isset($_COOKIE['login'])) {
 	}
 }
 //cek apakah sesuai status sudah login? kalau belum akan kembali ke form login
-if($_SESSION['status']!="sudah_login"){
+if($_SESSION['status']="sudah_login"){
 //melakukan pengalihan
 	header("location:login.php");
 }
