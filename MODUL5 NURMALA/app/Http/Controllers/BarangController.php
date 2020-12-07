@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Barang;
+use App\Pesanan;
 use Alert;
 use Illuminate\Http\Request;
 

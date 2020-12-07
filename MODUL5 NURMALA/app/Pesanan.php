@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Pesanan extends Model
+class Barang extends Model
 {
     public function user()
 	{
